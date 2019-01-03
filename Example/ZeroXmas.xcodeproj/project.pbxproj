@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		1971F7A53CEC01240F0E6B3C /* Pods_ZeroXmas_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4AA95F1D4342FEF156AF65 /* Pods_ZeroXmas_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6A9A24EB21DDA57E00B26B78 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A24EA21DDA57E00B26B78 /* iconfont.ttf */; };
+		6A9A24ED21DDDC0C00B26B78 /* T1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A24EC21DDDC0C00B26B78 /* T1ViewController.swift */; };
+		6A9A24EF21DDEDE100B26B78 /* T2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A24EE21DDEDE100B26B78 /* T2ViewController.swift */; };
+		6A9A24F121DDEDE900B26B78 /* T3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A24F021DDEDE900B26B78 /* T3ViewController.swift */; };
+		6A9A24F321DDEDF400B26B78 /* T4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A24F221DDEDF400B26B78 /* T4ViewController.swift */; };
+		6A9A24F521DDEDFB00B26B78 /* T5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A24F421DDEDFB00B26B78 /* T5ViewController.swift */; };
 		CD094F83D40001150E45E68A /* Pods_ZeroXmas_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3E7706AF892AA86C7C575C /* Pods_ZeroXmas_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,22 +34,26 @@
 /* Begin PBXFileReference section */
 		05E361B10180BAFBC4BC125A /* Pods-ZeroXmas_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroXmas_Example.release.xcconfig"; path = "Target Support Files/Pods-ZeroXmas_Example/Pods-ZeroXmas_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1C3E7706AF892AA86C7C575C /* Pods_ZeroXmas_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeroXmas_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		216BD08C957F006FAA67022A /* ZeroXmas.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZeroXmas.podspec; path = ../ZeroXmas.podspec; sourceTree = "<group>"; };
-		25105F25A00E41637547A355 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		216BD08C957F006FAA67022A /* ZeroXmas.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZeroXmas.podspec; path = ../ZeroXmas.podspec; sourceTree = "<group>"; };
+		25105F25A00E41637547A355 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5105658C0DC3A8E26292D9FD /* Pods-ZeroXmas_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroXmas_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZeroXmas_Tests/Pods-ZeroXmas_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZeroXmas_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroXmas_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ZeroXmas_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroXmas_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6A9A24EA21DDA57E00B26B78 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		6A9A24EC21DDDC0C00B26B78 /* T1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T1ViewController.swift; sourceTree = "<group>"; };
+		6A9A24EE21DDEDE100B26B78 /* T2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T2ViewController.swift; sourceTree = "<group>"; };
+		6A9A24F021DDEDE900B26B78 /* T3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T3ViewController.swift; sourceTree = "<group>"; };
+		6A9A24F221DDEDF400B26B78 /* T4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T4ViewController.swift; sourceTree = "<group>"; };
+		6A9A24F421DDEDFB00B26B78 /* T5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T5ViewController.swift; sourceTree = "<group>"; };
 		6B4AA95F1D4342FEF156AF65 /* Pods_ZeroXmas_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeroXmas_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E338BD35B4E506CE9055FDEA /* Pods-ZeroXmas_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroXmas_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZeroXmas_Example/Pods-ZeroXmas_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E663952B283E1BA2BF8143DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E663952B283E1BA2BF8143DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F66389A2E877E8894A1C3FD9 /* Pods-ZeroXmas_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroXmas_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZeroXmas_Tests/Pods-ZeroXmas_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +94,6 @@
 				F66389A2E877E8894A1C3FD9 /* Pods-ZeroXmas_Tests.debug.xcconfig */,
 				5105658C0DC3A8E26292D9FD /* Pods-ZeroXmas_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,9 +121,13 @@
 		607FACD21AFB9204008FA782 /* Example for ZeroXmas */ = {
 			isa = PBXGroup;
 			children = (
+				6A9A24EA21DDA57E00B26B78 /* iconfont.ttf */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				6A9A24EC21DDDC0C00B26B78 /* T1ViewController.swift */,
+				6A9A24EE21DDEDE100B26B78 /* T2ViewController.swift */,
+				6A9A24F021DDEDE900B26B78 /* T3ViewController.swift */,
+				6A9A24F221DDEDF400B26B78 /* T4ViewController.swift */,
+				6A9A24F421DDEDFB00B26B78 /* T5ViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -208,16 +219,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -246,7 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				6A9A24EB21DDA57E00B26B78 /* iconfont.ttf in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -271,12 +283,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZeroXmas_Example/Pods-ZeroXmas_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZeroXmas/ZeroXmas.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZeroXmas.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,8 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				6A9A24F521DDEDFB00B26B78 /* T5ViewController.swift in Sources */,
+				6A9A24F321DDEDF400B26B78 /* T4ViewController.swift in Sources */,
+				6A9A24ED21DDDC0C00B26B78 /* T1ViewController.swift in Sources */,
+				6A9A24EF21DDEDE100B26B78 /* T2ViewController.swift in Sources */,
+				6A9A24F121DDEDE900B26B78 /* T3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,14 +377,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -390,12 +400,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -443,12 +455,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -482,13 +496,15 @@
 			baseConfigurationReference = E338BD35B4E506CE9055FDEA /* Pods-ZeroXmas_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZeroXmas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -497,13 +513,15 @@
 			baseConfigurationReference = 05E361B10180BAFBC4BC125A /* Pods-ZeroXmas_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZeroXmas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -523,8 +541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroXmas_Example.app/ZeroXmas_Example";
 			};
 			name = Debug;
@@ -541,8 +558,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroXmas_Example.app/ZeroXmas_Example";
 			};
 			name = Release;

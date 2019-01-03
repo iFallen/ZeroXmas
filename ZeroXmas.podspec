@@ -30,8 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ZeroXmas/Classes/**/*'
-  
+  s.source_files          = 'ZeroXmas/**/*.swift'
+  s.resource              = 'ZeroXmas/ZXSettings.bundle'  
   # s.resource_bundles = {
   #   'ZeroXmas' => ['ZeroXmas/Assets/*.png']
   # }

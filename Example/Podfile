@@ -2,7 +2,8 @@ use_frameworks!
 
 target 'ZeroXmas_Example' do
   pod 'ZeroXmas', :path => '../'
-
+	pod 'SnapKit'
+	
   target 'ZeroXmas_Tests' do
     inherit! :search_paths
 

@@ -1,0 +1,1207 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091B611B1953EFA51576FFC829B1A860 /* ZXCommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DCA45772D171DF3D080D4317DDB2CF /* ZXCommonUtils.swift */; };
+		09DDD9918EDBF900766FA72CD7196EAE /* Timer+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FE5AB56F5B9D3A38AC12EFCAE37050 /* Timer+ZeroXmas.swift */; };
+		09ECA4A01AECD1399089A1F56861DDCC /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CE3DCD5A18E652A9D4C4FCC6AEAE10 /* ConstraintMakerEditable.swift */; };
+		0BD06225BCF7EDD63D56C6DA06B38683 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75E7EE36678F81FD1EC4247DB1B87 /* ConstraintMakerFinalizable.swift */; };
+		0C2455F2D580A8BAB32AFB158CA42116 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC0AC855EFDB998E84AB91F91FC4CA /* ConstraintInsetTarget.swift */; };
+		1314BD9E1CC09491CFE5E6F012F4D6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		15884200091F8D61BB5A48504DE54046 /* UITabBarViewController+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE802F78D21B93FA36545634939884 /* UITabBarViewController+ZeroXmas.swift */; };
+		180F3FAB0D553769A67C164E133EDDBC /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1FE61DC3251BBA5CD452BE8564C8E7 /* ConstraintMaker.swift */; };
+		1BABC9F64FBBF0FF7965947998240B81 /* UIDevice+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB33EB04F363257BB297A090B96AC2 /* UIDevice+ZeroXmas.swift */; };
+		1BDFB259C3952E2CFD41E388369867B3 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3463E11A1205B5C35B599F4A19C31C3 /* ConstraintOffsetTarget.swift */; };
+		1C08DE81E2F502E468976625BB81C156 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3A931CDC4FB0563592274ED61655C7 /* ConstraintPriority.swift */; };
+		1E71FDE26B58ED5E5DF3C2D39D268B02 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1C88D7583A855F149230ABA2DF3C8 /* ConstraintRelatableTarget.swift */; };
+		1EFD4009CE552B817F7CF1F25233B315 /* Bundle+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086C5DEA68DF2918E4BB2C35722E1DF /* Bundle+ZeroXmas.swift */; };
+		219A8AB1C94DE66A1B735E2F07C9584D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		29F0121371C1BC8514E71C436259FB1D /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A0112C128A5882BD95A9B2255E0665 /* SnapKit-dummy.m */; };
+		3432DD54B8F8A69AF3B45AB842C322A6 /* ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1222FC281BC04823DFD97FD450D0E /* ZeroXmas.swift */; };
+		38EE6D12DBAF4B3B95928119566B77C2 /* Pods-ZeroXmas_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BE5AC781D35D3B4D3B9DA782222D3F /* Pods-ZeroXmas_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3903CEB67E1F32C0D9467E511A10D7CF /* ZXFontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C9E2C2A7D9DC30982690A7F1F904A /* ZXFontConfig.swift */; };
+		3DC28D72190662EC6123830ECF298996 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618BA51B32ACF0F8F31A11BACEF95396 /* ConstraintMultiplierTarget.swift */; };
+		3E28FAB5E7CDFAE7CEEDF550247BA49C /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F3260249C5CD5E62E6D02610A41D /* ConstraintPriorityTarget.swift */; };
+		505DCB0F68DD625136885B0CCD21FCFB /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97CEFB74800C4A5F04ED11A13D33D5 /* ConstraintItem.swift */; };
+		555ECC4C1BFA5F2529B25D6DD84EF5E4 /* ZXTintColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77757E9F0E9563DF80D991E4E9ECC4D0 /* ZXTintColorConfig.swift */; };
+		58ACCF774F0C15B6808F4457F264357C /* UIFont+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DFD2767BFCCAA6285F6D0651549FFB /* UIFont+ZeroXmas.swift */; };
+		5FA7EE6ADD60664A5CF7217D18114E24 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FAD1ED522B9041959ED19ED6B3DE /* Constraint.swift */; };
+		6C4C5DE3C5ADF5362AEDDBCC4F85EDE9 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A39EF6D4C8D8F847461613349A75E07 /* ConstraintDescription.swift */; };
+		71EEEBB2A1552E56108A9BDCF97D933D /* ZXNavBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C185FAF3C92775C2E1239BF3701731F /* ZXNavBarConfig.swift */; };
+		7628E2167162C87E9C8F8E5D3B8D4ABB /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE14A5BE5AA8350526F042EBC920BAA /* ConstraintLayoutSupport.swift */; };
+		8327C454B5450B81A9D6A4D6BE3A7711 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC67A9344FB011AC6B0CB0B1706C1C /* ConstraintLayoutSupportDSL.swift */; };
+		849CAE45A1873DFB7AF2EF72044A1B0D /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B37DF3091040E67CCD48EF50ED44709A /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		869B9D6D7DC2E3FBB52E0F955DEBA08B /* ReusableView+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AA05C3FC8031359D082812457D1AF3 /* ReusableView+ZeroXmas.swift */; };
+		87317E858DAB61BCB7356F71EC4FB113 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645061FD8BF394AC613CF4F0D51EEE0B /* ConstraintDSL.swift */; };
+		8A7D0E51CF0096481B085A48272FD77F /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDCD0CDEC036E08EBEFEBDB5217C5A /* ConstraintView+Extensions.swift */; };
+		8C0C7DDC6EDBE2E3E628CCAFCC3A687D /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69B953D578152B8ABC94EDF5E0C6A43 /* LayoutConstraintItem.swift */; };
+		8D0F69AD4316BAC6155D79A647569526 /* Pods-ZeroXmas_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CECED32231CA4FC802ED8209A3253F46 /* Pods-ZeroXmas_Example-dummy.m */; };
+		90ED52F71DAB304BD2ADD8F76D0D7811 /* Pods-ZeroXmas_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 878C5C39E493206C1643C4E042CB5CE0 /* Pods-ZeroXmas_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9185B4E45C8DCA4BA60B421E78F08A1B /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155B0F68F55650AB9DA3EB802B75CFE0 /* ConstraintConstantTarget.swift */; };
+		9ABCE94A76C22A4C8D53B8C94F7E9D78 /* UIColor+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA1345CE1F0A515A06D1D1C703180D /* UIColor+ZeroXmas.swift */; };
+		9F626FEBFF9AE6F53FDD4A8DC6F19C6B /* UIScreen+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB5BD3B5DC20885D0490A3075A534D /* UIScreen+ZeroXmas.swift */; };
+		A02F4E2B913E0802E5ED091EE52B49E7 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17F2D7F42352672F30A144E51AC809 /* ConstraintRelation.swift */; };
+		A9053F3FBED28EC265E57821BD6C749C /* UIViewController+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65BBBDC7399B40ECF90A985E9B70BD /* UIViewController+ZeroXmas.swift */; };
+		AD3718675F793A398D1E6CF3C2E1223A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		AED4C0CBEC2003E5065EE9875B1D0C01 /* ZXTabBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70530CDCC1FFA64F005A27218C22566 /* ZXTabBarConfig.swift */; };
+		B0569AB67CA356E18C3EE91489BE5BB2 /* UIAlertController+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C6AF10CB1EAB68E4111C51FDB30E88 /* UIAlertController+ZeroXmas.swift */; };
+		B2FDEF67E2B3F438500C043BAAE04CD5 /* ZeroXmas-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 047553C5797B7B37BC67324CE3835A8F /* ZeroXmas-dummy.m */; };
+		BA9C8D8653EEE4DB4BDB8D26736EE8BD /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5FAAF2F13CE5B667DCA58EF782CF6D /* ConstraintLayoutGuide.swift */; };
+		BCF0A2785C10F4A962D40DFF1C07AB65 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A91D0ACFB6CF1883A820AA2607BCA8 /* ConstraintView.swift */; };
+		C34D514681A0E116D487CD44B9679742 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF518E3C1EEA98354E7A1BB1CEC881B /* ConstraintAttributes.swift */; };
+		C4F0B2C99E92D1C98653A9A7C130F774 /* Pods-ZeroXmas_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D9CBAB93E2A2E52DEF35A2B131FFB3 /* Pods-ZeroXmas_Tests-dummy.m */; };
+		CB46C8A091282CB101D43BE31B327A2A /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068A4C41AD3E035EFFE7E7F568CE1EF9 /* ConstraintLayoutGuideDSL.swift */; };
+		CCBB5A15C5E1374D52E2849366FBCC56 /* ZXNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF42F4262C48DED3888CEB77798D415 /* ZXNetwork.swift */; };
+		CD110ACF68A37CD9321C56624D7EF92F /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465909C1E34108C63AB5FBA6378D3493 /* LayoutConstraint.swift */; };
+		CDAFCE1ECAFF83B4CF89C6288EA2438F /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297EFDA2A228BE0D126B13FEC2B2AC1 /* ConstraintInsets.swift */; };
+		D60DB6205EA246A9A679F22583BAF1B4 /* Date+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907D200F10A10B11CCC0835E095E217 /* Date+ZeroXmas.swift */; };
+		D9E7562D15392681ECE03505F8D338DC /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E03888824F0BC09BC4827577C35087 /* Debugging.swift */; };
+		DE47D9FF6A19F28C797B884EC8A87431 /* NSAttributedString+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36ABB50FB2AD7CB9A1C5D4EA088E64B /* NSAttributedString+ZeroXmas.swift */; };
+		E00D7F57C78DC00CB7C9F4F4E3D90354 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058F739089B32F3323418933731ADFB /* ConstraintViewDSL.swift */; };
+		E1C2EE4CE24256A24347FD1B8D82C05D /* ZXLocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B53C98FEC4F1F2F10BC5722EF7FD246 /* ZXLocationUtils.swift */; };
+		E3FCA1E1A13283D04D631E210D87B442 /* String+ZeroXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A69428F1F92C664A970AF7D8845E32 /* String+ZeroXmas.swift */; };
+		E4661CBEC468D08B4F51B25A121028F8 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09C8BFD80A7988D3B139768116EE2A7 /* ConstraintMakerRelatable.swift */; };
+		E5E80C57F858568C0E5E47523071AE40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		EAC0295F392AC8D8BF07140EB6804799 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */; };
+		F1026FF815FDAFA79C9B3F71A3F62473 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABC9D64458AB89596AC989C36546AE0 /* Typealiases.swift */; };
+		F22F7CA37276636A20B228F2DBF7349D /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4EE941C99C2F663494C43944D63FD /* ConstraintConfig.swift */; };
+		F4942D948D2434586293D6FB69A41CC3 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A4D5D85B4FAEB4C7AF868A3E48121 /* ConstraintMakerPriortizable.swift */; };
+		F6732AF740E489B2989297745BC3AD23 /* ZXSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A27BAC4BE1C2BFA97C9CD7F786E63407 /* ZXSettings.bundle */; };
+		F6787824B55D264AB93988A886819740 /* ZeroXmas-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4B59F2CC6947F028D70A6472010011 /* ZeroXmas-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD70BB4E2643B39E85A6BEBA70B5F42C /* ZXConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE36A4054F59D06C6A394CA63B9119A /* ZXConfigProtocol.swift */; };
+		FD950A39FF90C3B723F352B18CC59C44 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130FD3420568BD4A44BC6359400E0A8 /* ConstraintLayoutGuide+Extensions.swift */; };
+		FF21483F82E7FA0185DD1EA52B7B9613 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35E795A4705B4FB474FF417682335F1 /* ConstraintMakerExtendable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2397378C5ECDB4FB5402C1D81A79EF72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E32740FBCBD270A6C7CFE84EFC8086ED;
+			remoteInfo = "Pods-ZeroXmas_Example";
+		};
+		90CA47E32AB0450E753AAA3D5F095FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61013172C6B1EB6F54CF6D3EE090483B;
+			remoteInfo = ZeroXmas;
+		};
+		A9DA462805E83023EBDB252BCBC36A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF831FB30AFAF7138FB6DE53CBF42C74;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047553C5797B7B37BC67324CE3835A8F /* ZeroXmas-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZeroXmas-dummy.m"; sourceTree = "<group>"; };
+		068A4C41AD3E035EFFE7E7F568CE1EF9 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		08767BA3918033D2F4586E5D3E5F966C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0AF518E3C1EEA98354E7A1BB1CEC881B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		0EF42F4262C48DED3888CEB77798D415 /* ZXNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNetwork.swift; sourceTree = "<group>"; };
+		10A69428F1F92C664A970AF7D8845E32 /* String+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+ZeroXmas.swift"; sourceTree = "<group>"; };
+		1130FD3420568BD4A44BC6359400E0A8 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		1219FA83C9FD76231EE5DC343D0F59B5 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		155B0F68F55650AB9DA3EB802B75CFE0 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		1C185FAF3C92775C2E1239BF3701731F /* ZXNavBarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNavBarConfig.swift; sourceTree = "<group>"; };
+		1C3A931CDC4FB0563592274ED61655C7 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		23C4EE941C99C2F663494C43944D63FD /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		24494DDE058E8742305E488D4CAA0644 /* Pods-ZeroXmas_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZeroXmas_Tests.modulemap"; sourceTree = "<group>"; };
+		2798FAD1ED522B9041959ED19ED6B3DE /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		2DEE802F78D21B93FA36545634939884 /* UITabBarViewController+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITabBarViewController+ZeroXmas.swift"; sourceTree = "<group>"; };
+		30A0112C128A5882BD95A9B2255E0665 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		311A6C5B77189C231279F18170048E2C /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AA8EAF9797D3591D026449AC79922F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		35A91D0ACFB6CF1883A820AA2607BCA8 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		3A39EF6D4C8D8F847461613349A75E07 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		3ABC9D64458AB89596AC989C36546AE0 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		3C64E2090C5023D9232324DA80236194 /* Pods-ZeroXmas_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZeroXmas_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4140A8052D84343C956A4C9BAC144111 /* ZeroXmas.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZeroXmas.xcconfig; sourceTree = "<group>"; };
+		45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		465909C1E34108C63AB5FBA6378D3493 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		46AA05C3FC8031359D082812457D1AF3 /* ReusableView+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ReusableView+ZeroXmas.swift"; sourceTree = "<group>"; };
+		4780544148AE43DBA7312E8CE7D268ED /* Pods-ZeroXmas_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZeroXmas_Tests-Info.plist"; sourceTree = "<group>"; };
+		48CE3DCD5A18E652A9D4C4FCC6AEAE10 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		4AE36A4054F59D06C6A394CA63B9119A /* ZXConfigProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXConfigProtocol.swift; sourceTree = "<group>"; };
+		4B1D501D51EBC813CB50C98A5AFECB91 /* Pods_ZeroXmas_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZeroXmas_Example.framework; path = "Pods-ZeroXmas_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BCC96AE18899F6C21D4C81C812B09D5 /* ZeroXmas.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZeroXmas.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E571608353CDAC9F6785A7586E88796 /* Pods-ZeroXmas_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZeroXmas_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		50950FB5FB8C56B593F63507E442C37A /* Pods-ZeroXmas_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZeroXmas_Example.modulemap"; sourceTree = "<group>"; };
+		51C6AF10CB1EAB68E4111C51FDB30E88 /* UIAlertController+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ZeroXmas.swift"; sourceTree = "<group>"; };
+		5495F3260249C5CD5E62E6D02610A41D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		5B2A7ED0B51C5314F32EF1192F7F63E4 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		5FAC0AC855EFDB998E84AB91F91FC4CA /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		618BA51B32ACF0F8F31A11BACEF95396 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		645061FD8BF394AC613CF4F0D51EEE0B /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		6634AF0C1833FFDAE4E1A2D5FA7099B6 /* Pods-ZeroXmas_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZeroXmas_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6F65BBBDC7399B40ECF90A985E9B70BD /* UIViewController+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZeroXmas.swift"; sourceTree = "<group>"; };
+		6FC28C9680D7F4A96749974B004419AA /* Pods-ZeroXmas_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZeroXmas_Example-Info.plist"; sourceTree = "<group>"; };
+		77757E9F0E9563DF80D991E4E9ECC4D0 /* ZXTintColorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTintColorConfig.swift; sourceTree = "<group>"; };
+		78D9CBAB93E2A2E52DEF35A2B131FFB3 /* Pods-ZeroXmas_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZeroXmas_Tests-dummy.m"; sourceTree = "<group>"; };
+		7B0C9E2C2A7D9DC30982690A7F1F904A /* ZXFontConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXFontConfig.swift; sourceTree = "<group>"; };
+		86FE5AB56F5B9D3A38AC12EFCAE37050 /* Timer+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Timer+ZeroXmas.swift"; sourceTree = "<group>"; };
+		878C5C39E493206C1643C4E042CB5CE0 /* Pods-ZeroXmas_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZeroXmas_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8A0A4D5D85B4FAEB4C7AF868A3E48121 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		8D54A8656995ADF2F1BA33A24498CE03 /* ZeroXmas-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZeroXmas-Info.plist"; sourceTree = "<group>"; };
+		90E861C77F94425819AFC93A076E444D /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		9297EFDA2A228BE0D126B13FEC2B2AC1 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		92EC67A9344FB011AC6B0CB0B1706C1C /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		96DFD2767BFCCAA6285F6D0651549FFB /* UIFont+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+ZeroXmas.swift"; sourceTree = "<group>"; };
+		97E18860E7D208A142476F7BA8419A39 /* Pods-ZeroXmas_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZeroXmas_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B53C98FEC4F1F2F10BC5722EF7FD246 /* ZXLocationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXLocationUtils.swift; sourceTree = "<group>"; };
+		9E399AAD824472F992F418E56EDD3881 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		A1BE5AC781D35D3B4D3B9DA782222D3F /* Pods-ZeroXmas_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZeroXmas_Example-umbrella.h"; sourceTree = "<group>"; };
+		A27BAC4BE1C2BFA97C9CD7F786E63407 /* ZXSettings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ZXSettings.bundle; path = ZeroXmas/ZXSettings.bundle; sourceTree = "<group>"; };
+		A70530CDCC1FFA64F005A27218C22566 /* ZXTabBarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTabBarConfig.swift; sourceTree = "<group>"; };
+		AB2BCF067E6FBD1FEC57539DF34E691A /* ZeroXmas-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZeroXmas-prefix.pch"; sourceTree = "<group>"; };
+		AC4B59F2CC6947F028D70A6472010011 /* ZeroXmas-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZeroXmas-umbrella.h"; sourceTree = "<group>"; };
+		AF5FAAF2F13CE5B667DCA58EF782CF6D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		B058F739089B32F3323418933731ADFB /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36ABB50FB2AD7CB9A1C5D4EA088E64B /* NSAttributedString+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+ZeroXmas.swift"; sourceTree = "<group>"; };
+		B37DF3091040E67CCD48EF50ED44709A /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		B8BB5BD3B5DC20885D0490A3075A534D /* UIScreen+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScreen+ZeroXmas.swift"; sourceTree = "<group>"; };
+		B8BDCD0CDEC036E08EBEFEBDB5217C5A /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		BDA593D334B721D729AD5D53EABA0B3D /* Pods-ZeroXmas_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZeroXmas_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BF14B72D80639476F67EA5312DEF0C5E /* Pods_ZeroXmas_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZeroXmas_Tests.framework; path = "Pods-ZeroXmas_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DCA45772D171DF3D080D4317DDB2CF /* ZXCommonUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXCommonUtils.swift; sourceTree = "<group>"; };
+		CD55256D7F8113DB5C97A5B2393F3C57 /* Pods-ZeroXmas_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZeroXmas_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CECED32231CA4FC802ED8209A3253F46 /* Pods-ZeroXmas_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZeroXmas_Example-dummy.m"; sourceTree = "<group>"; };
+		D086C5DEA68DF2918E4BB2C35722E1DF /* Bundle+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+ZeroXmas.swift"; sourceTree = "<group>"; };
+		D09C8BFD80A7988D3B139768116EE2A7 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		D3463E11A1205B5C35B599F4A19C31C3 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		D35E795A4705B4FB474FF417682335F1 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		D4C1222FC281BC04823DFD97FD450D0E /* ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroXmas.swift; path = ZeroXmas/Classes/ZeroXmas.swift; sourceTree = "<group>"; };
+		D69B953D578152B8ABC94EDF5E0C6A43 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6E03888824F0BC09BC4827577C35087 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		DA17F2D7F42352672F30A144E51AC809 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		DBE14A5BE5AA8350526F042EBC920BAA /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		DD97CEFB74800C4A5F04ED11A13D33D5 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		E17F43D7966F7C827C42DE50CA7E1D66 /* ZeroXmas.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZeroXmas.modulemap; sourceTree = "<group>"; };
+		E5BA1345CE1F0A515A06D1D1C703180D /* UIColor+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+ZeroXmas.swift"; sourceTree = "<group>"; };
+		E907D200F10A10B11CCC0835E095E217 /* Date+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+ZeroXmas.swift"; sourceTree = "<group>"; };
+		E99BC7252DD46CD09B2B5B9C7979EBAB /* Pods-ZeroXmas_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZeroXmas_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EDCC4CF2C124F486EB09E335D3F39C4F /* ZeroXmas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZeroXmas.framework; path = ZeroXmas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB1C88D7583A855F149230ABA2DF3C8 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		EEBB33EB04F363257BB297A090B96AC2 /* UIDevice+ZeroXmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+ZeroXmas.swift"; sourceTree = "<group>"; };
+		F028E5B8A0AC3B7CE0D6A68A0B6FB8C5 /* Pods-ZeroXmas_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZeroXmas_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F3F75E7EE36678F81FD1EC4247DB1B87 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		F45BBA51A233ADC01ED552A18B1958AE /* Pods-ZeroXmas_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZeroXmas_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FE1FE61DC3251BBA5CD452BE8564C8E7 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F767AF304CBEA054AB4C3F19E787F99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219A8AB1C94DE66A1B735E2F07C9584D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95CB773EB70C54E9D37397EE0EC5A29E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1314BD9E1CC09491CFE5E6F012F4D6BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51C33375DD03E3C2618567F4C681ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E80C57F858568C0E5E47523071AE40 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3086ABF49FC2EC1A99508DD778DD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3718675F793A398D1E6CF3C2E1223A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E1B1104DD916832FF7A03861215078 /* ZXConfig */ = {
+			isa = PBXGroup;
+			children = (
+				4AE36A4054F59D06C6A394CA63B9119A /* ZXConfigProtocol.swift */,
+				7B0C9E2C2A7D9DC30982690A7F1F904A /* ZXFontConfig.swift */,
+				1C185FAF3C92775C2E1239BF3701731F /* ZXNavBarConfig.swift */,
+				A70530CDCC1FFA64F005A27218C22566 /* ZXTabBarConfig.swift */,
+				77757E9F0E9563DF80D991E4E9ECC4D0 /* ZXTintColorConfig.swift */,
+			);
+			name = ZXConfig;
+			path = ZeroXmas/Classes/ZXConfig;
+			sourceTree = "<group>";
+		};
+		088503DEDC926DDE45F35C0C18A92462 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B1D501D51EBC813CB50C98A5AFECB91 /* Pods_ZeroXmas_Example.framework */,
+				BF14B72D80639476F67EA5312DEF0C5E /* Pods_ZeroXmas_Tests.framework */,
+				311A6C5B77189C231279F18170048E2C /* SnapKit.framework */,
+				EDCC4CF2C124F486EB09E335D3F39C4F /* ZeroXmas.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F14D01B37C684095099AE8C8376D636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3CBBE2C7163F9C96209ED44FA75D0 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		29AEFEAF5D03E97CEF47FC1C271A590A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E399AAD824472F992F418E56EDD3881 /* SnapKit.modulemap */,
+				90E861C77F94425819AFC93A076E444D /* SnapKit.xcconfig */,
+				30A0112C128A5882BD95A9B2255E0665 /* SnapKit-dummy.m */,
+				1219FA83C9FD76231EE5DC343D0F59B5 /* SnapKit-Info.plist */,
+				5B2A7ED0B51C5314F32EF1192F7F63E4 /* SnapKit-prefix.pch */,
+				B37DF3091040E67CCD48EF50ED44709A /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		2BA41153674B8AEEFF642A04629E34A3 /* Pods-ZeroXmas_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				24494DDE058E8742305E488D4CAA0644 /* Pods-ZeroXmas_Tests.modulemap */,
+				CD55256D7F8113DB5C97A5B2393F3C57 /* Pods-ZeroXmas_Tests-acknowledgements.markdown */,
+				E99BC7252DD46CD09B2B5B9C7979EBAB /* Pods-ZeroXmas_Tests-acknowledgements.plist */,
+				78D9CBAB93E2A2E52DEF35A2B131FFB3 /* Pods-ZeroXmas_Tests-dummy.m */,
+				4780544148AE43DBA7312E8CE7D268ED /* Pods-ZeroXmas_Tests-Info.plist */,
+				878C5C39E493206C1643C4E042CB5CE0 /* Pods-ZeroXmas_Tests-umbrella.h */,
+				4E571608353CDAC9F6785A7586E88796 /* Pods-ZeroXmas_Tests.debug.xcconfig */,
+				6634AF0C1833FFDAE4E1A2D5FA7099B6 /* Pods-ZeroXmas_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZeroXmas_Tests";
+			path = "Target Support Files/Pods-ZeroXmas_Tests";
+			sourceTree = "<group>";
+		};
+		2EAF48633F6C33FC7E352880971004D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A27BAC4BE1C2BFA97C9CD7F786E63407 /* ZXSettings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		34F28496CFFC4516FA09AC36930B6108 /* Pods-ZeroXmas_Example */ = {
+			isa = PBXGroup;
+			children = (
+				50950FB5FB8C56B593F63507E442C37A /* Pods-ZeroXmas_Example.modulemap */,
+				F028E5B8A0AC3B7CE0D6A68A0B6FB8C5 /* Pods-ZeroXmas_Example-acknowledgements.markdown */,
+				97E18860E7D208A142476F7BA8419A39 /* Pods-ZeroXmas_Example-acknowledgements.plist */,
+				CECED32231CA4FC802ED8209A3253F46 /* Pods-ZeroXmas_Example-dummy.m */,
+				3C64E2090C5023D9232324DA80236194 /* Pods-ZeroXmas_Example-frameworks.sh */,
+				6FC28C9680D7F4A96749974B004419AA /* Pods-ZeroXmas_Example-Info.plist */,
+				A1BE5AC781D35D3B4D3B9DA782222D3F /* Pods-ZeroXmas_Example-umbrella.h */,
+				BDA593D334B721D729AD5D53EABA0B3D /* Pods-ZeroXmas_Example.debug.xcconfig */,
+				F45BBA51A233ADC01ED552A18B1958AE /* Pods-ZeroXmas_Example.release.xcconfig */,
+			);
+			name = "Pods-ZeroXmas_Example";
+			path = "Target Support Files/Pods-ZeroXmas_Example";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				F93328ECBD2E395EAF55C19A60B116E8 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0F14D01B37C684095099AE8C8376D636 /* Pods */,
+				088503DEDC926DDE45F35C0C18A92462 /* Products */,
+				E76EE4B832C97FDC650C00887A040CD4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8AAE41CFF6A57D92175AFA49C006D5E0 /* ZXExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D086C5DEA68DF2918E4BB2C35722E1DF /* Bundle+ZeroXmas.swift */,
+				B36ABB50FB2AD7CB9A1C5D4EA088E64B /* NSAttributedString+ZeroXmas.swift */,
+				46AA05C3FC8031359D082812457D1AF3 /* ReusableView+ZeroXmas.swift */,
+				10A69428F1F92C664A970AF7D8845E32 /* String+ZeroXmas.swift */,
+				86FE5AB56F5B9D3A38AC12EFCAE37050 /* Timer+ZeroXmas.swift */,
+				E5BA1345CE1F0A515A06D1D1C703180D /* UIColor+ZeroXmas.swift */,
+				EEBB33EB04F363257BB297A090B96AC2 /* UIDevice+ZeroXmas.swift */,
+				96DFD2767BFCCAA6285F6D0651549FFB /* UIFont+ZeroXmas.swift */,
+				B8BB5BD3B5DC20885D0490A3075A534D /* UIScreen+ZeroXmas.swift */,
+				2DEE802F78D21B93FA36545634939884 /* UITabBarViewController+ZeroXmas.swift */,
+				6F65BBBDC7399B40ECF90A985E9B70BD /* UIViewController+ZeroXmas.swift */,
+			);
+			name = ZXExtension;
+			path = ZeroXmas/Classes/ZXExtension;
+			sourceTree = "<group>";
+		};
+		902ADE551EF2083D85D14B24D28984E4 /* ZeroXmas */ = {
+			isa = PBXGroup;
+			children = (
+				D4C1222FC281BC04823DFD97FD450D0E /* ZeroXmas.swift */,
+				D439F0449C5B6030B6C7BA76FD421033 /* Pod */,
+				2EAF48633F6C33FC7E352880971004D2 /* Resources */,
+				C4E9C8B8B36C94C1DEBE7578B732EE39 /* Support Files */,
+				00E1B1104DD916832FF7A03861215078 /* ZXConfig */,
+				8AAE41CFF6A57D92175AFA49C006D5E0 /* ZXExtension */,
+				BEAB43CE9389C2E8DB5C92EAFFC0DABE /* ZXUtilityTools */,
+			);
+			name = ZeroXmas;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		ACE3CBBE2C7163F9C96209ED44FA75D0 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				2798FAD1ED522B9041959ED19ED6B3DE /* Constraint.swift */,
+				0AF518E3C1EEA98354E7A1BB1CEC881B /* ConstraintAttributes.swift */,
+				23C4EE941C99C2F663494C43944D63FD /* ConstraintConfig.swift */,
+				155B0F68F55650AB9DA3EB802B75CFE0 /* ConstraintConstantTarget.swift */,
+				3A39EF6D4C8D8F847461613349A75E07 /* ConstraintDescription.swift */,
+				645061FD8BF394AC613CF4F0D51EEE0B /* ConstraintDSL.swift */,
+				9297EFDA2A228BE0D126B13FEC2B2AC1 /* ConstraintInsets.swift */,
+				5FAC0AC855EFDB998E84AB91F91FC4CA /* ConstraintInsetTarget.swift */,
+				DD97CEFB74800C4A5F04ED11A13D33D5 /* ConstraintItem.swift */,
+				AF5FAAF2F13CE5B667DCA58EF782CF6D /* ConstraintLayoutGuide.swift */,
+				1130FD3420568BD4A44BC6359400E0A8 /* ConstraintLayoutGuide+Extensions.swift */,
+				068A4C41AD3E035EFFE7E7F568CE1EF9 /* ConstraintLayoutGuideDSL.swift */,
+				DBE14A5BE5AA8350526F042EBC920BAA /* ConstraintLayoutSupport.swift */,
+				92EC67A9344FB011AC6B0CB0B1706C1C /* ConstraintLayoutSupportDSL.swift */,
+				FE1FE61DC3251BBA5CD452BE8564C8E7 /* ConstraintMaker.swift */,
+				48CE3DCD5A18E652A9D4C4FCC6AEAE10 /* ConstraintMakerEditable.swift */,
+				D35E795A4705B4FB474FF417682335F1 /* ConstraintMakerExtendable.swift */,
+				F3F75E7EE36678F81FD1EC4247DB1B87 /* ConstraintMakerFinalizable.swift */,
+				8A0A4D5D85B4FAEB4C7AF868A3E48121 /* ConstraintMakerPriortizable.swift */,
+				D09C8BFD80A7988D3B139768116EE2A7 /* ConstraintMakerRelatable.swift */,
+				618BA51B32ACF0F8F31A11BACEF95396 /* ConstraintMultiplierTarget.swift */,
+				D3463E11A1205B5C35B599F4A19C31C3 /* ConstraintOffsetTarget.swift */,
+				1C3A931CDC4FB0563592274ED61655C7 /* ConstraintPriority.swift */,
+				5495F3260249C5CD5E62E6D02610A41D /* ConstraintPriorityTarget.swift */,
+				EEB1C88D7583A855F149230ABA2DF3C8 /* ConstraintRelatableTarget.swift */,
+				DA17F2D7F42352672F30A144E51AC809 /* ConstraintRelation.swift */,
+				35A91D0ACFB6CF1883A820AA2607BCA8 /* ConstraintView.swift */,
+				B8BDCD0CDEC036E08EBEFEBDB5217C5A /* ConstraintView+Extensions.swift */,
+				B058F739089B32F3323418933731ADFB /* ConstraintViewDSL.swift */,
+				D6E03888824F0BC09BC4827577C35087 /* Debugging.swift */,
+				465909C1E34108C63AB5FBA6378D3493 /* LayoutConstraint.swift */,
+				D69B953D578152B8ABC94EDF5E0C6A43 /* LayoutConstraintItem.swift */,
+				3ABC9D64458AB89596AC989C36546AE0 /* Typealiases.swift */,
+				45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */,
+				29AEFEAF5D03E97CEF47FC1C271A590A /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEAB43CE9389C2E8DB5C92EAFFC0DABE /* ZXUtilityTools */ = {
+			isa = PBXGroup;
+			children = (
+				E907D200F10A10B11CCC0835E095E217 /* Date+ZeroXmas.swift */,
+				51C6AF10CB1EAB68E4111C51FDB30E88 /* UIAlertController+ZeroXmas.swift */,
+				C6DCA45772D171DF3D080D4317DDB2CF /* ZXCommonUtils.swift */,
+				9B53C98FEC4F1F2F10BC5722EF7FD246 /* ZXLocationUtils.swift */,
+				0EF42F4262C48DED3888CEB77798D415 /* ZXNetwork.swift */,
+			);
+			name = ZXUtilityTools;
+			path = ZeroXmas/Classes/ZXUtilityTools;
+			sourceTree = "<group>";
+		};
+		C4E9C8B8B36C94C1DEBE7578B732EE39 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E17F43D7966F7C827C42DE50CA7E1D66 /* ZeroXmas.modulemap */,
+				4140A8052D84343C956A4C9BAC144111 /* ZeroXmas.xcconfig */,
+				047553C5797B7B37BC67324CE3835A8F /* ZeroXmas-dummy.m */,
+				8D54A8656995ADF2F1BA33A24498CE03 /* ZeroXmas-Info.plist */,
+				AB2BCF067E6FBD1FEC57539DF34E691A /* ZeroXmas-prefix.pch */,
+				AC4B59F2CC6947F028D70A6472010011 /* ZeroXmas-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZeroXmas";
+			sourceTree = "<group>";
+		};
+		D439F0449C5B6030B6C7BA76FD421033 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				33AA8EAF9797D3591D026449AC79922F /* LICENSE */,
+				08767BA3918033D2F4586E5D3E5F966C /* README.md */,
+				4BCC96AE18899F6C21D4C81C812B09D5 /* ZeroXmas.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E76EE4B832C97FDC650C00887A040CD4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34F28496CFFC4516FA09AC36930B6108 /* Pods-ZeroXmas_Example */,
+				2BA41153674B8AEEFF642A04629E34A3 /* Pods-ZeroXmas_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F93328ECBD2E395EAF55C19A60B116E8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				902ADE551EF2083D85D14B24D28984E4 /* ZeroXmas */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A0707DC1E837506F62A86C3C604CC3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6787824B55D264AB93988A886819740 /* ZeroXmas-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59A912714B09775D68C1E6C13CF75923 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ED52F71DAB304BD2ADD8F76D0D7811 /* Pods-ZeroXmas_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D891C9BA07F44F7FA46E89444B9C95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38EE6D12DBAF4B3B95928119566B77C2 /* Pods-ZeroXmas_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6089527183EB9606B4766BE74A8835 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849CAE45A1873DFB7AF2EF72044A1B0D /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61013172C6B1EB6F54CF6D3EE090483B /* ZeroXmas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2467231260C75C1CBEBDCF0A70847E26 /* Build configuration list for PBXNativeTarget "ZeroXmas" */;
+			buildPhases = (
+				3A0707DC1E837506F62A86C3C604CC3E /* Headers */,
+				0B6B8FFEA9A41CF2F84EE748BCDF5C3D /* Sources */,
+				FD3086ABF49FC2EC1A99508DD778DD65 /* Frameworks */,
+				93C790DC1E657AD195A48B3A82E9500E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroXmas;
+			productName = ZeroXmas;
+			productReference = EDCC4CF2C124F486EB09E335D3F39C4F /* ZeroXmas.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB5DB486E5C633D495FC6E6A57D0A47A /* Pods-ZeroXmas_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 289F7F9F20E9649FB42D9386A36D83AC /* Build configuration list for PBXNativeTarget "Pods-ZeroXmas_Tests" */;
+			buildPhases = (
+				59A912714B09775D68C1E6C13CF75923 /* Headers */,
+				87EEE79271852D39C6CCF082EC834B14 /* Sources */,
+				95CB773EB70C54E9D37397EE0EC5A29E /* Frameworks */,
+				DCBE96437C721A2744574348E91960AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				102C1B9B3ADE3B10675A34272ED6046B /* PBXTargetDependency */,
+			);
+			name = "Pods-ZeroXmas_Tests";
+			productName = "Pods-ZeroXmas_Tests";
+			productReference = BF14B72D80639476F67EA5312DEF0C5E /* Pods_ZeroXmas_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF831FB30AFAF7138FB6DE53CBF42C74 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F00A1DD97FFED99DCB62762FFC3A47C /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				7B6089527183EB9606B4766BE74A8835 /* Headers */,
+				4A20A9AA00B0FB49A9A7D77747563D54 /* Sources */,
+				1F767AF304CBEA054AB4C3F19E787F99 /* Frameworks */,
+				E1D952DA6AFF8F0CD74655924797C06E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 311A6C5B77189C231279F18170048E2C /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E32740FBCBD270A6C7CFE84EFC8086ED /* Pods-ZeroXmas_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70DC0B9E92B9687953E1BA715745C26F /* Build configuration list for PBXNativeTarget "Pods-ZeroXmas_Example" */;
+			buildPhases = (
+				66D891C9BA07F44F7FA46E89444B9C95 /* Headers */,
+				C1D07B08829EDE65C641E502B925F9D4 /* Sources */,
+				C51C33375DD03E3C2618567F4C681ADD /* Frameworks */,
+				13CD517B21287996FB3B7A056EE6440A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAA4F2EE80080E7943CB955C2F4A3897 /* PBXTargetDependency */,
+				045304840B8D211D9CAF95A8C7C1C0E1 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZeroXmas_Example";
+			productName = "Pods-ZeroXmas_Example";
+			productReference = 4B1D501D51EBC813CB50C98A5AFECB91 /* Pods_ZeroXmas_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 088503DEDC926DDE45F35C0C18A92462 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E32740FBCBD270A6C7CFE84EFC8086ED /* Pods-ZeroXmas_Example */,
+				CB5DB486E5C633D495FC6E6A57D0A47A /* Pods-ZeroXmas_Tests */,
+				CF831FB30AFAF7138FB6DE53CBF42C74 /* SnapKit */,
+				61013172C6B1EB6F54CF6D3EE090483B /* ZeroXmas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13CD517B21287996FB3B7A056EE6440A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C790DC1E657AD195A48B3A82E9500E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6732AF740E489B2989297745BC3AD23 /* ZXSettings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBE96437C721A2744574348E91960AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D952DA6AFF8F0CD74655924797C06E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B6B8FFEA9A41CF2F84EE748BCDF5C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFD4009CE552B817F7CF1F25233B315 /* Bundle+ZeroXmas.swift in Sources */,
+				D60DB6205EA246A9A679F22583BAF1B4 /* Date+ZeroXmas.swift in Sources */,
+				DE47D9FF6A19F28C797B884EC8A87431 /* NSAttributedString+ZeroXmas.swift in Sources */,
+				869B9D6D7DC2E3FBB52E0F955DEBA08B /* ReusableView+ZeroXmas.swift in Sources */,
+				E3FCA1E1A13283D04D631E210D87B442 /* String+ZeroXmas.swift in Sources */,
+				09DDD9918EDBF900766FA72CD7196EAE /* Timer+ZeroXmas.swift in Sources */,
+				B0569AB67CA356E18C3EE91489BE5BB2 /* UIAlertController+ZeroXmas.swift in Sources */,
+				9ABCE94A76C22A4C8D53B8C94F7E9D78 /* UIColor+ZeroXmas.swift in Sources */,
+				1BABC9F64FBBF0FF7965947998240B81 /* UIDevice+ZeroXmas.swift in Sources */,
+				58ACCF774F0C15B6808F4457F264357C /* UIFont+ZeroXmas.swift in Sources */,
+				9F626FEBFF9AE6F53FDD4A8DC6F19C6B /* UIScreen+ZeroXmas.swift in Sources */,
+				15884200091F8D61BB5A48504DE54046 /* UITabBarViewController+ZeroXmas.swift in Sources */,
+				A9053F3FBED28EC265E57821BD6C749C /* UIViewController+ZeroXmas.swift in Sources */,
+				B2FDEF67E2B3F438500C043BAAE04CD5 /* ZeroXmas-dummy.m in Sources */,
+				3432DD54B8F8A69AF3B45AB842C322A6 /* ZeroXmas.swift in Sources */,
+				091B611B1953EFA51576FFC829B1A860 /* ZXCommonUtils.swift in Sources */,
+				FD70BB4E2643B39E85A6BEBA70B5F42C /* ZXConfigProtocol.swift in Sources */,
+				3903CEB67E1F32C0D9467E511A10D7CF /* ZXFontConfig.swift in Sources */,
+				E1C2EE4CE24256A24347FD1B8D82C05D /* ZXLocationUtils.swift in Sources */,
+				71EEEBB2A1552E56108A9BDCF97D933D /* ZXNavBarConfig.swift in Sources */,
+				CCBB5A15C5E1374D52E2849366FBCC56 /* ZXNetwork.swift in Sources */,
+				AED4C0CBEC2003E5065EE9875B1D0C01 /* ZXTabBarConfig.swift in Sources */,
+				555ECC4C1BFA5F2529B25D6DD84EF5E4 /* ZXTintColorConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A20A9AA00B0FB49A9A7D77747563D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA7EE6ADD60664A5CF7217D18114E24 /* Constraint.swift in Sources */,
+				C34D514681A0E116D487CD44B9679742 /* ConstraintAttributes.swift in Sources */,
+				F22F7CA37276636A20B228F2DBF7349D /* ConstraintConfig.swift in Sources */,
+				9185B4E45C8DCA4BA60B421E78F08A1B /* ConstraintConstantTarget.swift in Sources */,
+				6C4C5DE3C5ADF5362AEDDBCC4F85EDE9 /* ConstraintDescription.swift in Sources */,
+				87317E858DAB61BCB7356F71EC4FB113 /* ConstraintDSL.swift in Sources */,
+				CDAFCE1ECAFF83B4CF89C6288EA2438F /* ConstraintInsets.swift in Sources */,
+				0C2455F2D580A8BAB32AFB158CA42116 /* ConstraintInsetTarget.swift in Sources */,
+				505DCB0F68DD625136885B0CCD21FCFB /* ConstraintItem.swift in Sources */,
+				FD950A39FF90C3B723F352B18CC59C44 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				BA9C8D8653EEE4DB4BDB8D26736EE8BD /* ConstraintLayoutGuide.swift in Sources */,
+				CB46C8A091282CB101D43BE31B327A2A /* ConstraintLayoutGuideDSL.swift in Sources */,
+				7628E2167162C87E9C8F8E5D3B8D4ABB /* ConstraintLayoutSupport.swift in Sources */,
+				8327C454B5450B81A9D6A4D6BE3A7711 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				180F3FAB0D553769A67C164E133EDDBC /* ConstraintMaker.swift in Sources */,
+				09ECA4A01AECD1399089A1F56861DDCC /* ConstraintMakerEditable.swift in Sources */,
+				FF21483F82E7FA0185DD1EA52B7B9613 /* ConstraintMakerExtendable.swift in Sources */,
+				0BD06225BCF7EDD63D56C6DA06B38683 /* ConstraintMakerFinalizable.swift in Sources */,
+				F4942D948D2434586293D6FB69A41CC3 /* ConstraintMakerPriortizable.swift in Sources */,
+				E4661CBEC468D08B4F51B25A121028F8 /* ConstraintMakerRelatable.swift in Sources */,
+				3DC28D72190662EC6123830ECF298996 /* ConstraintMultiplierTarget.swift in Sources */,
+				1BDFB259C3952E2CFD41E388369867B3 /* ConstraintOffsetTarget.swift in Sources */,
+				1C08DE81E2F502E468976625BB81C156 /* ConstraintPriority.swift in Sources */,
+				3E28FAB5E7CDFAE7CEEDF550247BA49C /* ConstraintPriorityTarget.swift in Sources */,
+				1E71FDE26B58ED5E5DF3C2D39D268B02 /* ConstraintRelatableTarget.swift in Sources */,
+				A02F4E2B913E0802E5ED091EE52B49E7 /* ConstraintRelation.swift in Sources */,
+				8A7D0E51CF0096481B085A48272FD77F /* ConstraintView+Extensions.swift in Sources */,
+				BCF0A2785C10F4A962D40DFF1C07AB65 /* ConstraintView.swift in Sources */,
+				E00D7F57C78DC00CB7C9F4F4E3D90354 /* ConstraintViewDSL.swift in Sources */,
+				D9E7562D15392681ECE03505F8D338DC /* Debugging.swift in Sources */,
+				CD110ACF68A37CD9321C56624D7EF92F /* LayoutConstraint.swift in Sources */,
+				8C0C7DDC6EDBE2E3E628CCAFCC3A687D /* LayoutConstraintItem.swift in Sources */,
+				29F0121371C1BC8514E71C436259FB1D /* SnapKit-dummy.m in Sources */,
+				F1026FF815FDAFA79C9B3F71A3F62473 /* Typealiases.swift in Sources */,
+				EAC0295F392AC8D8BF07140EB6804799 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EEE79271852D39C6CCF082EC834B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F0B2C99E92D1C98653A9A7C130F774 /* Pods-ZeroXmas_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D07B08829EDE65C641E502B925F9D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0F69AD4316BAC6155D79A647569526 /* Pods-ZeroXmas_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045304840B8D211D9CAF95A8C7C1C0E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZeroXmas;
+			target = 61013172C6B1EB6F54CF6D3EE090483B /* ZeroXmas */;
+			targetProxy = 90CA47E32AB0450E753AAA3D5F095FCF /* PBXContainerItemProxy */;
+		};
+		102C1B9B3ADE3B10675A34272ED6046B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ZeroXmas_Example";
+			target = E32740FBCBD270A6C7CFE84EFC8086ED /* Pods-ZeroXmas_Example */;
+			targetProxy = 2397378C5ECDB4FB5402C1D81A79EF72 /* PBXContainerItemProxy */;
+		};
+		AAA4F2EE80080E7943CB955C2F4A3897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = CF831FB30AFAF7138FB6DE53CBF42C74 /* SnapKit */;
+			targetProxy = A9DA462805E83023EBDB252BCBC36A6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A57A02AA4D1D2C8B6E60FFC0898025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F45BBA51A233ADC01ED552A18B1958AE /* Pods-ZeroXmas_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZeroXmas_Example/Pods-ZeroXmas_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZeroXmas_Example/Pods-ZeroXmas_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		200ABB988DE7E82A30A8A1D044B91757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4140A8052D84343C956A4C9BAC144111 /* ZeroXmas.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZeroXmas/ZeroXmas-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZeroXmas/ZeroXmas-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZeroXmas/ZeroXmas.modulemap";
+				PRODUCT_MODULE_NAME = ZeroXmas;
+				PRODUCT_NAME = ZeroXmas;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		499A47AF64DBB87B838D87753EC66BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4140A8052D84343C956A4C9BAC144111 /* ZeroXmas.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZeroXmas/ZeroXmas-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZeroXmas/ZeroXmas-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZeroXmas/ZeroXmas.modulemap";
+				PRODUCT_MODULE_NAME = ZeroXmas;
+				PRODUCT_NAME = ZeroXmas;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5153DC2E9BB4F6D6F85AF7C0A4A2A27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6A949A208667F02694AF29D5DCC8D4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A499DC2A2753A7F84D6290C866CA383F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6634AF0C1833FFDAE4E1A2D5FA7099B6 /* Pods-ZeroXmas_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZeroXmas_Tests/Pods-ZeroXmas_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZeroXmas_Tests/Pods-ZeroXmas_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC7D637E7900799E39BEF97684C01482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E571608353CDAC9F6785A7586E88796 /* Pods-ZeroXmas_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZeroXmas_Tests/Pods-ZeroXmas_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZeroXmas_Tests/Pods-ZeroXmas_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2FE7B548197B19ADE5207875DF71A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA593D334B721D729AD5D53EABA0B3D /* Pods-ZeroXmas_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZeroXmas_Example/Pods-ZeroXmas_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZeroXmas_Example/Pods-ZeroXmas_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB4067A4E83ECF5DF87439F4F8CF7BF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E861C77F94425819AFC93A076E444D /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D690E16941A8837E567D1D706663A73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E861C77F94425819AFC93A076E444D /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2467231260C75C1CBEBDCF0A70847E26 /* Build configuration list for PBXNativeTarget "ZeroXmas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200ABB988DE7E82A30A8A1D044B91757 /* Debug */,
+				499A47AF64DBB87B838D87753EC66BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		289F7F9F20E9649FB42D9386A36D83AC /* Build configuration list for PBXNativeTarget "Pods-ZeroXmas_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7D637E7900799E39BEF97684C01482 /* Debug */,
+				A499DC2A2753A7F84D6290C866CA383F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5153DC2E9BB4F6D6F85AF7C0A4A2A27F /* Debug */,
+				6A949A208667F02694AF29D5DCC8D4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70DC0B9E92B9687953E1BA715745C26F /* Build configuration list for PBXNativeTarget "Pods-ZeroXmas_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FE7B548197B19ADE5207875DF71A4B /* Debug */,
+				1A57A02AA4D1D2C8B6E60FFC0898025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F00A1DD97FFED99DCB62762FFC3A47C /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4067A4E83ECF5DF87439F4F8CF7BF2 /* Debug */,
+				D690E16941A8837E567D1D706663A73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

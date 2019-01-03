@@ -2,20 +2,39 @@
 //  AppDelegate.swift
 //  ZeroXmas
 //
-//  Created by iFallen on 01/03/2019.
-//  Copyright (c) 2019 iFallen. All rights reserved.
+//  Created by JuanFelix on 01/03/2019.
+//  Copyright (c) 2019 JuanFelix. All rights reserved.
 //
 
 import UIKit
+import ZeroXmas
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var tabBar: UITabBarController!
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow()
+        
+        ZXConfig.loadUIConfig()
+        //ZXConfig.loadNavBarConfig()
+        //ZXConfig.loadTabBarConfig()
+        
+        tabBar = UITabBarController()
+        tabBar.zx.addChild(T1ViewController(), fromPlistItemIndex: 0)
+        tabBar.zx.addChild(T2ViewController(), fromPlistItemIndex: 1)
+        tabBar.zx.addChild(T3ViewController(), fromPlistItemIndex: 2)//showAsPresent
+        tabBar.zx.addChild(T4ViewController(), fromPlistItemIndex: 3)
+        tabBar.zx.addChild(T5ViewController(), fromPlistItemIndex: 4)
+        
+        tabBar.delegate = self
+        
+        
+        window?.rootViewController = tabBar
+        window?.makeKeyAndVisible()
         return true
     }
 
@@ -40,7 +59,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+extension AppDelegate: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return UITabBarController.zx.tabBarController(tabBarController, shouldSelectViewController: viewController)
+    }
+}

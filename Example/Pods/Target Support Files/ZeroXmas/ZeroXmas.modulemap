@@ -1,0 +1,6 @@
+framework module ZeroXmas {
+  umbrella header "ZeroXmas-umbrella.h"
+
+  export *
+  module * { export * }
+}

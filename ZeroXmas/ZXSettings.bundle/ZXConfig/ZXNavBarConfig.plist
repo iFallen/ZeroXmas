@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>useSystemBackButton</key>
+	<false/>
+	<key>showSeparatorLine</key>
+	<false/>
+	<key>isTranslucent</key>
+	<false/>
+	<key>titleFontName</key>
+	<string>Academy Engraved LET</string>
+	<key>backgroundColor</key>
+	<string>#3B87EE</string>
+	<key>titleColor</key>
+	<string>#ffffff</string>
+	<key>buttonTextColor</key>
+	<string>#ffffff</string>
+	<key>titleFontSize</key>
+	<dict>
+		<key>4_0</key>
+		<integer>18</integer>
+		<key>4_7</key>
+		<integer>21</integer>
+		<key>5_x</key>
+		<integer>21</integer>
+		<key>6_x</key>
+		<integer>22</integer>
+	</dict>
+	<key>buttonFontSize</key>
+	<dict>
+		<key>4_0</key>
+		<integer>14</integer>
+		<key>4_7</key>
+		<integer>16</integer>
+		<key>5_x</key>
+		<integer>16</integer>
+		<key>6_x</key>
+		<integer>16</integer>
+	</dict>
+</dict>
+</plist>

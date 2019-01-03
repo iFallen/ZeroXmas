@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>titleColor</key>
+	<string>#3b3e43</string>
+	<key>bodyColor</key>
+	<string>#5e6269</string>
+	<key>markColor</key>
+	<string>#9fa4ac</string>
+	<key>titleFontName</key>
+	<string>PingFangSC-Regular</string>
+	<key>bodyFontName</key>
+	<string>PingFangSC-Light</string>
+	<key>markFontName</key>
+	<string>PingFangSC-Light</string>
+	<key>iconFontName</key>
+	<string>iconfont</string>
+	<key>titleFontSize</key>
+	<dict>
+		<key>4_0</key>
+		<integer>15</integer>
+		<key>4_7</key>
+		<integer>17</integer>
+		<key>5_x</key>
+		<integer>18</integer>
+		<key>6_x</key>
+		<integer>20</integer>
+	</dict>
+	<key>bodyFontSize</key>
+	<dict>
+		<key>4_0</key>
+		<integer>13</integer>
+		<key>4_7</key>
+		<integer>14</integer>
+		<key>5_x</key>
+		<integer>15</integer>
+		<key>6_x</key>
+		<integer>17</integer>
+	</dict>
+	<key>markFontSize</key>
+	<dict>
+		<key>4_0</key>
+		<integer>10</integer>
+		<key>4_7</key>
+		<integer>11</integer>
+		<key>5_x</key>
+		<integer>12</integer>
+		<key>6_x</key>
+		<integer>14</integer>
+	</dict>
+</dict>
+</plist>
