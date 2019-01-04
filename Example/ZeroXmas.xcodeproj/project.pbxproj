@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		05E361B10180BAFBC4BC125A /* Pods-ZeroXmas_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroXmas_Example.release.xcconfig"; path = "Target Support Files/Pods-ZeroXmas_Example/Pods-ZeroXmas_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1C3E7706AF892AA86C7C575C /* Pods_ZeroXmas_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeroXmas_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		216BD08C957F006FAA67022A /* ZeroXmas.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZeroXmas.podspec; path = ../ZeroXmas.podspec; sourceTree = "<group>"; };
+		216BD08C957F006FAA67022A /* ZeroXmas.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZeroXmas.podspec; path = ../ZeroXmas.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		25105F25A00E41637547A355 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5105658C0DC3A8E26292D9FD /* Pods-ZeroXmas_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroXmas_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZeroXmas_Tests/Pods-ZeroXmas_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZeroXmas_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroXmas_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };

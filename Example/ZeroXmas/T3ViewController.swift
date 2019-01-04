@@ -13,12 +13,18 @@ class T3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "SHOW AS PRESENT"
         view.backgroundColor = UIColor.zx.background
-        self.zx.addNavBarButtonItems(textNames: ["关闭"], font: nil, color: nil, at: .left)
+        self.zx.addNavBarButtonItems(textNames: ["关闭"], font: nil, color: UIColor.yellow, at: .left)
+        self.zx.addNavBarButtonItems(textNames: ["\u{e673}"], font: UIFont.zx.zx_iconFont(30), color: UIColor.zx.subTint, at: .right, fixSpace: 5)
     }
     
     override func zx_leftBarButtonAction(index: Int) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    override func zx_rightBarButtonAction(index: Int) {
+        UIAlertController.zx.showAlert(withTitle: "Info", message: "Test Message!")
     }
     
     /*

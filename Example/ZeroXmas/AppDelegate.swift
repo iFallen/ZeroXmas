@@ -24,11 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //ZXConfig.loadTabBarConfig()
         
         tabBar = UITabBarController()
-        tabBar.zx.addChild(T1ViewController(), fromPlistItemIndex: 0)
+        tabBar.zx.addChild(T1ViewController(), fromPlistItemIndex: 0, imageAsTemplate: true)
         tabBar.zx.addChild(T2ViewController(), fromPlistItemIndex: 1)
         tabBar.zx.addChild(T3ViewController(), fromPlistItemIndex: 2)//showAsPresent
-        tabBar.zx.addChild(T4ViewController(), fromPlistItemIndex: 3)
-        tabBar.zx.addChild(T5ViewController(), fromPlistItemIndex: 4)
+        tabBar.zx.addChild(T4ViewController(), fromPlistItemIndex: 3, imageAsTemplate: true)
+        tabBar.zx.addChild(T5ViewController(), fromPlistItemIndex: 4, imageAsTemplate: true)
         
         tabBar.delegate = self
         

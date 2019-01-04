@@ -33,13 +33,25 @@ extension ZeroXmas where Base: UITabBarController {
      /// - Parameters:
      ///   - controller: controller
      ///   - item: ZXTabbarItem
+     ///   - imageAsTemplate: default false, if true ,use plist selectedColor after selected
      public func addChild(_ controller: UIViewController!,
-                          from item:ZXTabbarItem) {
-        var normalImage = UIImage.init(named: item.normalImage)
-        normalImage     = normalImage?.withRenderingMode(.alwaysOriginal)
-        
-        var selectedImage   = UIImage.init(named: item.selectedImage)
-        selectedImage       = selectedImage?.withRenderingMode(.alwaysOriginal)
+                          from item:ZXTabbarItem,
+                          imageAsTemplate: Bool = false) {
+        var normalImage: UIImage?
+        var selectedImage: UIImage?
+        if imageAsTemplate {
+            var image = UIImage(named: item.normalImage)
+            image = image?.withRenderingMode(.alwaysTemplate)
+            normalImage = image
+            selectedImage = image
+
+        } else {
+            normalImage = UIImage.init(named: item.normalImage)
+            normalImage     = normalImage?.withRenderingMode(.alwaysOriginal)
+            
+            selectedImage   = UIImage.init(named: item.selectedImage)
+            selectedImage       = selectedImage?.withRenderingMode(.alwaysOriginal)
+        }
         
         controller.tabBarItem.image = normalImage
         controller.tabBarItem.selectedImage = selectedImage
@@ -52,7 +64,7 @@ extension ZeroXmas where Base: UITabBarController {
             ZXPresentVCInfo.zxPresentVCsDic["\((base.viewControllers?.count)!)"] = mInfo
             let emptyVC = UIViewController()
             emptyVC.tabBarItem.image = normalImage
-            emptyVC.tabBarItem.selectedImage = selectedImage
+            emptyVC.tabBarItem.selectedImage = normalImage
             emptyVC.tabBarItem.title = item.title
             base.addChild(emptyVC)
         } else {
@@ -71,11 +83,13 @@ extension ZeroXmas where Base: UITabBarController {
     /// - Parameters:
     ///   - controller: Controller
     ///   - index: index config(title/image/font)
+    ///   - imageAsTemplate: default false, if true ,use plist selectedColor after selected
     public func addChild(_ controller:UIViewController!,
-                         fromPlistItemIndex index:Int) {
+                         fromPlistItemIndex index:Int,
+                         imageAsTemplate: Bool = false) {
         let count = ZXTabBarConfig.barItems.count
         if count > 0 ,index < count{
-            addChild(controller, from: ZXTabBarConfig.barItems[index])
+            addChild(controller, from: ZXTabBarConfig.barItems[index], imageAsTemplate: imageAsTemplate)
         }
     }
     

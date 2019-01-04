@@ -11,11 +11,11 @@
 	<key>titleFontName</key>
 	<string>Academy Engraved LET</string>
 	<key>backgroundColor</key>
-	<string>#3B87EE</string>
+	<string>#2B2B2B</string>
 	<key>titleColor</key>
 	<string>#ffffff</string>
 	<key>buttonTextColor</key>
-	<string>#ffffff</string>
+	<string>#E84E3C</string>
 	<key>titleFontSize</key>
 	<dict>
 		<key>4_0</key>

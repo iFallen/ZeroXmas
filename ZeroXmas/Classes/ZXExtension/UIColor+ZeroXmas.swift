@@ -124,11 +124,11 @@ extension ZeroXmas where Base: UIColor {
         }
         
         public static var normal: UIColor {
-            return ZXTabBarConfig.titleNormalColor
+            return ZXTabBarConfig.normalColor
         }
         
         public static var selected: UIColor {
-            return ZXTabBarConfig.titleSelectedColor
+            return ZXTabBarConfig.selectedColor
         }
     }
 }

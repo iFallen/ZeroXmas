@@ -25,6 +25,8 @@ class T1ViewController: UIViewController {
         tblList = UITableView.init(frame: .zero, style: .plain)
         tblList.delegate = self
         tblList.dataSource = self
+        tblList.backgroundColor = UIColor.zx.background
+        tblList.separatorColor = UIColor.zx.border
         tblList.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.zx.reuseIdentifier)
         view.addSubview(tblList)
         tblList.snp.makeConstraints { (make) in
@@ -41,7 +43,12 @@ extension T1ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.zx.reuseIdentifier, for: indexPath)
+        cell.backgroundColor = .clear
+        cell.contentView.backgroundColor = .clear
+        cell.textLabel?.font = UIFont.zx.titleFont()
+        cell.textLabel?.textColor = UIColor.zx.title
         cell.accessoryType = .disclosureIndicator
+        cell.tintColor = UIColor.zx.title
         cell.textLabel?.text = itemList[indexPath.item]
         return cell
     }

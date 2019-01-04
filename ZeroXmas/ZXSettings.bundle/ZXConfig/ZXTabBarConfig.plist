@@ -7,11 +7,11 @@
 	<key>isTranslucent</key>
 	<false/>
 	<key>backgroundColor</key>
-	<string>#eff7fd</string>
-	<key>titleNormalColor</key>
+	<string>#2B2B2B</string>
+	<key>normalColor</key>
 	<string>#afaaae</string>
-	<key>titleSelectedColor</key>
-	<string>#3b87ef</string>
+	<key>selectedColor</key>
+	<string>#E84E3C</string>
 	<key>isCustomTitleFont</key>
 	<false/>
 	<key>customTitleFontName</key>
@@ -51,7 +51,7 @@
 			<key>selectedImage</key>
 			<string>tab_dingdan-blue</string>
 			<key>title</key>
-			<string>订单</string>
+			<string>List</string>
 		</dict>
 		<dict>
 			<key>showAsPresent</key>
@@ -59,9 +59,9 @@
 			<key>embedInNavigation</key>
 			<true/>
 			<key>normalImage</key>
-			<string>tab-icon-xiadan</string>
+			<string>tab-peixun</string>
 			<key>selectedImage</key>
-			<string>tab-icon-xiadan</string>
+			<string>tab-peixun</string>
 			<key>title</key>
 			<string></string>
 		</dict>
@@ -75,7 +75,7 @@
 			<key>selectedImage</key>
 			<string>tab_peixun-blue</string>
 			<key>title</key>
-			<string>培训</string>
+			<string>Test</string>
 		</dict>
 		<dict>
 			<key>showAsPresent</key>
@@ -87,7 +87,7 @@
 			<key>selectedImage</key>
 			<string>tab_wode-blue</string>
 			<key>title</key>
-			<string>我的</string>
+			<string>Profile</string>
 		</dict>
 	</array>
 </dict>

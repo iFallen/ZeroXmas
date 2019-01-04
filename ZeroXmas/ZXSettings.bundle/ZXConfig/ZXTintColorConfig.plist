@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>tint</key>
-	<string>#3b87ef</string>
+	<string>#E84E3C</string>
 	<key>subTint</key>
-	<string>#eff7fd</string>
+	<string>#FFA07A</string>
 	<key>background</key>
-	<string>#eff7fd</string>
+	<string>#0A0A0A</string>
 	<key>border</key>
-	<string>#eaeef4</string>
+	<string>#2b2b2b</string>
 	<key>empty</key>
 	<string>#ffffff</string>
 	<key>customA</key>

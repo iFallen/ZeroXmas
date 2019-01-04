@@ -73,20 +73,20 @@ public class ZXTabBarConfig: ZXConfigProtocol {
         return UIColor.zx.hexStr(self.backgroundColorStr)
     }
     
-    static var titleNormalColorStr: String {
-        return stringValue(for: "titleNormalColor", defaultValue: "#ff0000")
+    static var normalColorStr: String {
+        return stringValue(for: "normalColor", defaultValue: "#ff0000")
     }
     
-    public static var titleNormalColor: UIColor {
-        return UIColor.zx.hexStr(self.titleNormalColorStr)
+    public static var normalColor: UIColor {
+        return UIColor.zx.hexStr(self.normalColorStr)
     }
     
-    static var titleSelectedColorStr: String {
-        return stringValue(for: "titleSelectedColor", defaultValue: "#ff0000")
+    static var selectedColorStr: String {
+        return stringValue(for: "selectedColor", defaultValue: "#ff0000")
     }
     
-    public static var titleSelectedColor: UIColor {
-        return UIColor.zx.hexStr(self.titleSelectedColorStr)
+    public static var selectedColor: UIColor {
+        return UIColor.zx.hexStr(self.selectedColorStr)
     }
     
     static var _barItems: [ZXTabbarItem]?
@@ -110,6 +110,7 @@ public class ZXTabBarConfig: ZXConfigProtocol {
         let appearance = UITabBar.appearance()
         appearance.isTranslucent  = self.isTranslucent
         appearance.barTintColor   = self.backgroundColor
+        appearance.tintColor      = self.selectedColor
         if !self.showSeparatorLine {
             appearance.shadowImage = UIImage()
             appearance.backgroundImage = UIImage()
@@ -117,13 +118,13 @@ public class ZXTabBarConfig: ZXConfigProtocol {
         
         let tabBarItem = UITabBarItem.appearance()
         if !self.isCustomTitleFont {
-            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.titleNormalColor], for: .normal)
-            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.titleSelectedColor], for: .selected)
+            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.normalColor], for: .normal)
+            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.selectedColor], for: .selected)
         } else {
-            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.titleNormalColor,
+            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.normalColor,
                                                NSAttributedString.Key.font: self.customTitleFont],
                                               for: .normal)
-            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.titleSelectedColor,
+            tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.selectedColor,
                                                NSAttributedString.Key.font: self.customTitleFont],
                                               for: .selected)
         }
