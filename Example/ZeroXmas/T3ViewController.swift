@@ -17,7 +17,7 @@ class T3ViewController: ZXUIViewController {
         // Do any additional setup after loading the view.
         self.title = "SHOW AS PRESENT"
         self.zx.addNavBarButtonItems(textNames: ["关闭"], font: nil, color: UIColor.yellow, at: .left)
-        self.zx.addNavBarButtonItems(textNames: ["\u{e673}"], font: UIFont.zx.zx_iconFont(30), color: UIColor.zx.subTint, at: .right, fixSpace: 5)
+        self.zx.addNavBarButtonItems(textNames: ["\u{e673}"], font: UIFont.zx.iconFont(30), color: UIColor.zx.subTint, at: .right, fixSpace: 5)
     }
     
     override func zx_leftBarButtonAction(index: Int) {

@@ -45,7 +45,7 @@ extension ZeroXmas where Base: UIFont {
     /// - Parameters:
     ///   - size: CGFloat
     /// - Returns: UIFont
-    public static func zx_iconFont(_ size: CGFloat) -> UIFont {
+    public static func iconFont(_ size: CGFloat) -> UIFont {
         guard let font = UIFont(name: ZXFontConfig.iconFontName, size: size) else {
             fatalError("can not init iconfont")
         }

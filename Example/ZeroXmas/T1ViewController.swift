@@ -16,7 +16,7 @@ class T1ViewController: ZXUIViewController {
     override var preferredHidesBottomBarWhenPushed: Bool { return false }
     
     var tblList: UITableView!
-    let itemList = ["Color Usage", "Font Usage", "NavBar Usage", "Keyboard Notice Usage", "Alert Usage", "Date Usage", "Tiny Network Request Usage"]
+    let itemList = ["Color Usage", "Font Usage", "NavBar Usage", "Keyboard Notice Usage", "Alert Usage", "Date Usage", "Tiny Network Request Usage", "String Value", "Common Utils"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,9 +58,13 @@ extension T1ViewController: UITableViewDataSource {
 extension T1ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        guard let type = ZXSBControllerType(rawValue: indexPath.row) else {
-            return
+        if indexPath.row == 1 {
+            navigationController?.pushViewController(FontUsageViewController(), animated: true)
+        } else {//from sb
+            guard let type = ZXSBControllerType(rawValue: indexPath.row) else {
+                return
+            }
+            navigationController?.pushViewController(UIStoryboard.zx.controller(type), animated: true)
         }
-        navigationController?.pushViewController(UIStoryboard.zx.controller(type), animated: true)
     }
 }

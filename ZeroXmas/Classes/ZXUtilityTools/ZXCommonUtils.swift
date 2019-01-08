@@ -9,7 +9,22 @@
 import UIKit
 import AudioToolbox
 
-public typealias ZXFaildCallBack = (_ code: Int, _ errorMsg: String) -> Void
+
+public enum ZXURLCallStatus: CustomStringConvertible {
+    case invalid
+    case cantOpen
+    
+    public var description: String {
+        switch self {
+        case .invalid:
+            return "URL无效"
+        case .cantOpen:
+            return "无法打开"
+        }
+    }
+}
+
+public typealias ZXFaildCallBack = (_ status: ZXURLCallStatus) -> Void
 
 extension URL: ZeroXmasCompatible {}
 
@@ -25,17 +40,17 @@ extension ZeroXmas where Base == URL {
                     UIApplication.shared.openURL(url)
                 }
             } else {
-                failedCallBack?(-1, "无法访问")
+                failedCallBack?(.cantOpen)
             }
         } else {
-            failedCallBack?(-2, "URL不存在")
+            failedCallBack?(.invalid)
         }
     }
     
     public static func call(_ tel:String,
                             failedCallBack:ZXFaildCallBack?) {
-        self.openURL("tel://\(tel)") { (code, msg) in
-            failedCallBack?(code, msg)
+        self.openURL("tel://\(tel)") { (s) in
+            failedCallBack?(s)
         }
     }
 }

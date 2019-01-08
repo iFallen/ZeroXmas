@@ -63,7 +63,7 @@ extension ColorUsageViewController: UITableViewDataSource {
         let list = temp[indexPath.section][indexPath.row]
         cell.lbTitle.text = list.0
         cell.colorView.backgroundColor = list.1
-        cell.lbCode.text = list.2
+        cell.lbCode.text = "code: " + list.2
         return cell
     }
     

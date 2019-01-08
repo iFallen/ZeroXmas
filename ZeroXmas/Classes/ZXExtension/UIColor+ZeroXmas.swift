@@ -10,6 +10,14 @@ import UIKit
 
 extension ZeroXmas where Base: UIColor {
     
+    /// RGB
+    ///
+    /// - Parameters:
+    ///   - r: 0~255
+    ///   - g: 0~255
+    ///   - b: 0~255
+    ///   - a: 0~1
+    /// - Returns: UIColor
     public static func rgb(_ r: CGFloat,
                            _ g: CGFloat,
                            _ b: CGFloat,
@@ -48,6 +56,14 @@ extension ZeroXmas where Base: UIColor {
         Scanner(string: bString).scanHexInt32(&b)
 
         return rgb(CGFloat(r), CGFloat(g), CGFloat(b), CGFloat(1))
+    }
+    
+    
+    public static var random: UIColor {
+        let r = CGFloat(fmodf(Float(arc4random()), 255))
+        let g = CGFloat(fmodf(Float(arc4random()), 255))
+        let b = CGFloat(fmodf(Float(arc4random()), 255))
+        return self.rgb(r, g, b)
     }
 
 }

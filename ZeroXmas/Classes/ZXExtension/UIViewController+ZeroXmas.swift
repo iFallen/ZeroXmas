@@ -259,7 +259,7 @@ extension ZeroXmas where Base: UIViewController {
                 } else {
                     itemT = UIBarButtonItem.init(title: title, style: .plain, target: base, action: #selector(base.xxx_leftBarButtonAction(sender:)))
                 }
-                let config = [NSAttributedString.Key.font: UIFont.zx.zx_iconFont(size),
+                let config = [NSAttributedString.Key.font: UIFont.zx.iconFont(size),
                               NSAttributedString.Key.foregroundColor: color ?? UIColor.zx.navBar.buttonText]
                 itemT.setTitleTextAttributes(config , for: .normal)
                 itemT.setTitleTextAttributes(config , for: .highlighted)
