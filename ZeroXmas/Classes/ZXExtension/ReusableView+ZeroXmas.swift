@@ -12,15 +12,33 @@ import UIKit
 public protocol ReusableView: class {}
 public protocol NibLoadableView: class {}
 
+//extension ReusableView where Self: UIView {
+//    public static var reuseIdentifier: String {
+//        return String(describing: self)
+//    }
+//}
+//
+//extension ReusableView where Self: UIView {
+//    public static var nibName: String {
+//        return String(describing: self)
+//    }
+//}
+
 extension ZeroXmas where Base: ReusableView {
     public static var reuseIdentifier: String {
-        return String(describing: self)
+        var str = String(describing: self)
+        str = str.replacingOccurrences(of: "ZeroXmas<", with: "")
+        str = str.replacingOccurrences(of: ">", with: "")
+        return str
     }
 }
 
-extension ZeroXmas where Base: NibLoadableView {
+extension ZeroXmas where Base: ReusableView {
     public static var nibName: String {
-        return String(describing: self)
+        var str = String(describing: self)
+        str = str.replacingOccurrences(of: "ZeroXmas<", with: "")
+        str = str.replacingOccurrences(of: ">", with: "")
+        return str
     }
 }
 

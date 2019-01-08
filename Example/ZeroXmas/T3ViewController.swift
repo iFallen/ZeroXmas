@@ -8,13 +8,14 @@
 
 import UIKit
 
-class T3ViewController: UIViewController {
+class T3ViewController: ZXUIViewController {
 
+    override var preferredHidesBottomBarWhenPushed: Bool { return false }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "SHOW AS PRESENT"
-        view.backgroundColor = UIColor.zx.background
         self.zx.addNavBarButtonItems(textNames: ["关闭"], font: nil, color: UIColor.yellow, at: .left)
         self.zx.addNavBarButtonItems(textNames: ["\u{e673}"], font: UIFont.zx.zx_iconFont(30), color: UIColor.zx.subTint, at: .right, fixSpace: 5)
     }

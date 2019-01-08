@@ -8,8 +8,10 @@
 
 import UIKit
 
-class T5ViewController: UIViewController {
+class T5ViewController: ZXUIViewController {
 
+    override var preferredHidesBottomBarWhenPushed: Bool { return false }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

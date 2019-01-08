@@ -13,7 +13,7 @@
 	<key>selectedColor</key>
 	<string>#E84E3C</string>
 	<key>isCustomTitleFont</key>
-	<false/>
+	<true/>
 	<key>customTitleFontName</key>
 	<string>Snell Roundhand</string>
 	<key>customTitleFontSize</key>

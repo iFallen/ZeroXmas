@@ -71,7 +71,6 @@ public class ZXNavBarConfig: ZXConfigProtocol {
         return fontSizeValue(for: "buttonFontSize", defaultSize: 16)
     }
     
-    
     public static var buttonFont: UIFont {
         return UIFont.systemFont(ofSize: buttonFontSize)
     }

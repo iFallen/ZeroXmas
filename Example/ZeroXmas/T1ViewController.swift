@@ -11,7 +11,9 @@ import SnapKit
 
 
 /// Usage
-class T1ViewController: UIViewController {
+class T1ViewController: ZXUIViewController {
+    
+    override var preferredHidesBottomBarWhenPushed: Bool { return false }
     
     var tblList: UITableView!
     let itemList = ["Color Usage", "Font Usage", "NavBar Usage", "Keyboard Notice Usage", "Alert Usage", "Date Usage", "Tiny Network Request Usage"]
@@ -38,7 +40,6 @@ class T1ViewController: UIViewController {
 extension T1ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemList.count
-
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,7 +47,7 @@ extension T1ViewController: UITableViewDataSource {
         cell.backgroundColor = .clear
         cell.contentView.backgroundColor = .clear
         cell.textLabel?.font = UIFont.zx.titleFont()
-        cell.textLabel?.textColor = UIColor.zx.title
+        cell.textLabel?.textColor = UIColor.zx.mark
         cell.accessoryType = .disclosureIndicator
         cell.tintColor = UIColor.zx.title
         cell.textLabel?.text = itemList[indexPath.item]
@@ -57,6 +58,9 @@ extension T1ViewController: UITableViewDataSource {
 extension T1ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        guard let type = ZXSBControllerType(rawValue: indexPath.row) else {
+            return
+        }
+        navigationController?.pushViewController(UIStoryboard.zx.controller(type), animated: true)
     }
 }

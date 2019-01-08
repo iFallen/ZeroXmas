@@ -104,7 +104,7 @@ extension ZeroXmas where Base: UIColor {
 
 //MARK: - NavBar TabBar
 extension ZeroXmas where Base: UIColor {
-    public struct navbar {
+    public struct navBar {
         public static var background: UIColor {
             return ZXNavBarConfig.backgroundColor
         }
@@ -118,7 +118,7 @@ extension ZeroXmas where Base: UIColor {
         }
     }
     
-    struct tabbar {
+    public struct tabBar {
         public static var background: UIColor {
             return ZXTabBarConfig.backgroundColor
         }

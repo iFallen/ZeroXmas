@@ -208,7 +208,7 @@ extension ZeroXmas where Base: UIViewController {
                 itemT.tag = n
                 n += 1
                 let config = [NSAttributedString.Key.font:font ?? ZXNavBarConfig.buttonFont,
-                              NSAttributedString.Key.foregroundColor: color ?? UIColor.zx.navbar.buttonText]
+                              NSAttributedString.Key.foregroundColor: color ?? UIColor.zx.navBar.buttonText]
                 itemT.setTitleTextAttributes(config , for: .normal)
                 itemT.setTitleTextAttributes(config , for: .highlighted)
                 itemT.setTitleTextAttributes(config , for: .selected)
@@ -260,7 +260,7 @@ extension ZeroXmas where Base: UIViewController {
                     itemT = UIBarButtonItem.init(title: title, style: .plain, target: base, action: #selector(base.xxx_leftBarButtonAction(sender:)))
                 }
                 let config = [NSAttributedString.Key.font: UIFont.zx.zx_iconFont(size),
-                              NSAttributedString.Key.foregroundColor: color ?? UIColor.zx.navbar.buttonText]
+                              NSAttributedString.Key.foregroundColor: color ?? UIColor.zx.navBar.buttonText]
                 itemT.setTitleTextAttributes(config , for: .normal)
                 itemT.setTitleTextAttributes(config , for: .highlighted)
                 itemT.setTitleTextAttributes(config , for: .selected)

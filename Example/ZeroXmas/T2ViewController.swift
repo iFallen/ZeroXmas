@@ -8,12 +8,13 @@
 
 import UIKit
 
-class T2ViewController: UIViewController {
+class T2ViewController: ZXUIViewController {
 
+    override var preferredHidesBottomBarWhenPushed: Bool { return false }
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.title = "TabbarItem Use Origin Image"
-
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -24,7 +25,6 @@ class T2ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor.zx.background
     }
     
 
