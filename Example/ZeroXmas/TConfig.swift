@@ -42,7 +42,7 @@ class ZXUIViewController: UIViewController {
 
 enum ZXSBControllerType: Int, CustomStringConvertible {
     case colorUsage             =   0
-    case keyboardNoticeUsage    =   3
+    case keyboardNoticeUsage    =   4
     
     var description: String {
         switch self {
