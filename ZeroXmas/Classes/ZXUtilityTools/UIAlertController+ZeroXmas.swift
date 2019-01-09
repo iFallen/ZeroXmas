@@ -21,7 +21,7 @@ extension ZeroXmas where Base: UIAlertController {
         UIViewController.zx.rootViewController.present(alert, animated: true, completion: nil)
     }
     
-    public static func showAlert(wihtTitle title:String?,
+    public static func showAlert(withTitle title:String?,
                                  message:String?,
                                  buttonText:String?,
                                  action:(()->Void)?) {
@@ -33,7 +33,7 @@ extension ZeroXmas where Base: UIAlertController {
         UIViewController.zx.rootViewController.present(alert, animated: true, completion: nil)
     }
     
-    public static func showAlert(wihtTitle title:String?,
+    public static func showAlert(withTitle title:String?,
                                  message:String?,
                                  buttonTexts:Array<String>,
                                  action:((Int)->Void)?) {

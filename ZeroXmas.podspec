@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZeroXmas'
-  s.version          = '0.9.0'
-  s.summary          = 'A short description of ZeroXmas.'
+  s.version          = '0.9.1'
+  s.summary          = 'ZeroXmas is a lightweight Common UI Config Lib for iOS , write by swift.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: Config plist file in ZXSetting.bundle, Use UIColor.zx.xxx UIFont.zx.xxx and TabBar NavBar Config and so on.
                        DESC
 
   s.homepage         = 'https://github.com/iFallen/ZeroXmas'

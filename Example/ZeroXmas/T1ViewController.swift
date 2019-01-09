@@ -60,6 +60,8 @@ extension T1ViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 1 {
             navigationController?.pushViewController(FontUsageViewController(), animated: true)
+        } else if indexPath.row == 4 {
+            navigationController?.pushViewController(AlertUsageViewController(), animated: true)
         } else {//from sb
             guard let type = ZXSBControllerType(rawValue: indexPath.row) else {
                 return
