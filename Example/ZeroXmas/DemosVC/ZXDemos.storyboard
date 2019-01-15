@@ -74,7 +74,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Yf5-Ru-8HU" firstAttribute="bottom" secondItem="mVN-zH-dnv" secondAttribute="bottom" id="Ip7-3t-vd9"/>
+                            <constraint firstItem="Yf5-Ru-8HU" firstAttribute="bottom" secondItem="5MG-1x-Mho" secondAttribute="bottom" id="Ip7-3t-vd9"/>
                             <constraint firstItem="Yf5-Ru-8HU" firstAttribute="top" secondItem="5MG-1x-Mho" secondAttribute="top" id="R4y-CJ-Ssm"/>
                             <constraint firstItem="Yf5-Ru-8HU" firstAttribute="trailing" secondItem="mVN-zH-dnv" secondAttribute="trailing" id="giF-oD-LpT"/>
                             <constraint firstItem="Yf5-Ru-8HU" firstAttribute="leading" secondItem="mVN-zH-dnv" secondAttribute="leading" id="thd-aJ-KnO"/>
@@ -88,6 +88,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rb1-CP-30Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-599.20000000000005" y="-685.00749625187416"/>
+        </scene>
+        <!--Keyboard Notice Usage View Controller-->
+        <scene sceneID="JQ3-Aa-Rhw">
+            <objects>
+                <viewController storyboardIdentifier="KeyboardNoticeUsageViewController" id="Uvl-zG-xog" customClass="KeyboardNoticeUsageViewController" customModule="ZeroXmas_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FsG-JI-VKZ" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNm-Y6-a3I">
+                                <rect key="frame" x="30" y="72" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="R5b-sk-67S"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Uvl-zG-xog" id="L8Y-1V-Dni"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhj-1H-t39">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjh-ij-U9i">
+                                        <rect key="frame" x="136" y="12" width="103" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Vjh-ij-U9i" firstAttribute="centerX" secondItem="Vhj-1H-t39" secondAttribute="centerX" id="Mnu-xS-LQw"/>
+                                    <constraint firstItem="Vjh-ij-U9i" firstAttribute="centerY" secondItem="Vhj-1H-t39" secondAttribute="centerY" id="mQi-Gb-1Rp"/>
+                                    <constraint firstAttribute="height" constant="45" id="vIk-FK-GZ4"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-cB-6oG">
+                                <rect key="frame" x="30" y="132" width="315" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Usage:
+1. Add Notice:
+	self.zx.addKeyboardNotification()
+2. Override function:
+	    override func zx_keyboardWillShow(duration dt: Double, userInfo: Dictionary&lt;String, Any&gt;) {
+    }
+    
+    override func zx_keyboardWillChangeFrame(beginRect: CGRect, endRect: CGRect, duration dt: Double, userInfo: Dictionary&lt;String, Any&gt;) {
+    }
+    
+    override func zx_keyboardWillHide(duration dt: Double, userInfo: Dictionary&lt;String, Any&gt;) {
+    }
+
+3. Resign Notice:
+	self.zx.removeKeyboardNotification()
+</string>
+                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Vhj-1H-t39" secondAttribute="bottom" id="1EL-Xw-1Op"/>
+                            <constraint firstItem="sNm-Y6-a3I" firstAttribute="top" secondItem="CoA-F9-D34" secondAttribute="top" constant="52" id="8Ay-ci-fbB"/>
+                            <constraint firstItem="Byt-cB-6oG" firstAttribute="top" secondItem="sNm-Y6-a3I" secondAttribute="bottom" constant="20" id="GSy-W6-U8c"/>
+                            <constraint firstItem="Vhj-1H-t39" firstAttribute="leading" secondItem="CoA-F9-D34" secondAttribute="leading" id="Jnx-EZ-4Ek"/>
+                            <constraint firstItem="CoA-F9-D34" firstAttribute="trailing" secondItem="sNm-Y6-a3I" secondAttribute="trailing" constant="30" id="OI2-yL-weQ"/>
+                            <constraint firstItem="Vhj-1H-t39" firstAttribute="trailing" secondItem="CoA-F9-D34" secondAttribute="trailing" id="Ybh-Ty-dju"/>
+                            <constraint firstItem="CoA-F9-D34" firstAttribute="trailing" secondItem="Byt-cB-6oG" secondAttribute="trailing" constant="30" id="fmh-gj-Jqn"/>
+                            <constraint firstItem="sNm-Y6-a3I" firstAttribute="leading" secondItem="CoA-F9-D34" secondAttribute="leading" constant="30" id="kOJ-5s-hMO"/>
+                            <constraint firstItem="Vhj-1H-t39" firstAttribute="top" secondItem="Byt-cB-6oG" secondAttribute="bottom" constant="20" id="oQb-i1-hOd"/>
+                            <constraint firstItem="Byt-cB-6oG" firstAttribute="leading" secondItem="CoA-F9-D34" secondAttribute="leading" constant="30" id="pvC-R8-2Ne"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CoA-F9-D34"/>
+                        <connections>
+                            <action selector="touchDown:" destination="Uvl-zG-xog" eventType="touchDown" id="p9G-5x-Vo8"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="bottomOffset" destination="1EL-Xw-1Op" id="7xw-wO-Ed3"/>
+                        <outlet property="lbMessageInfo" destination="Vjh-ij-U9i" id="Up1-DZ-lab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybw-3c-8gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="-680.5097451274363"/>
         </scene>
     </scenes>
 </document>
