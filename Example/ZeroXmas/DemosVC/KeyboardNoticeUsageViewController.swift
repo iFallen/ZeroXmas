@@ -18,9 +18,24 @@ class KeyboardNoticeUsageViewController: ZXUIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "Keyboard Notice Usage"
+        //Keyboard Notifiaction
         self.zx.addKeyboardNotification()
+        //Application Notification
+        self.zx.addApplicationNotification()
     }
     
+    deinit {
+        self.zx.removeKeyboardNotification()
+        self.zx.removeApplicationNotification()
+    }
+
+    @IBAction func touchDown(_ sender: Any) {
+        self.view.endEditing(true)
+    }
+}
+
+//MARK: - Keyboard Notifiaction
+extension KeyboardNoticeUsageViewController {
     override func zx_keyboardWillShow(duration dt: Double, userInfo: Dictionary<String, Any>) {
         self.lbMessageInfo.text = "keyboardWillShow"
         let transition = CATransition()
@@ -50,26 +65,31 @@ class KeyboardNoticeUsageViewController: ZXUIViewController {
         transition.subtype = CATransitionSubtype.fromBottom
         transition.isRemovedOnCompletion = true
         self.lbMessageInfo.layer.add(transition, forKey: nil)
+        
+    }
+}
 
+extension KeyboardNoticeUsageViewController {
+    override func zx_appWillResignActive(notice: Notification) {
+        print("zx_appWillResignActive")
     }
     
-    deinit {
-        self.zx.removeKeyboardNotification()
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    @IBAction func touchDown(_ sender: Any) {
-        self.view.endEditing(true)
+    override func zx_appWillEnterForeground(notice: Notification) {
+        print("zx_appWillEnterForeground")
     }
     
+    override func zx_appDidBecomeActive(notice: Notification) {
+        print("zx_appDidBecomeActive")
+    }
+    
+    override func zx_appDidEnterBackground(notice: Notification) {
+        print("zx_appDidEnterBackground")
+    }
+    
+    override func zx_appWillTerminate(notice: Notification) {
+        print("zx_appWillTerminate")
+    }
+
 }
 
 extension KeyboardNoticeUsageViewController: UITextFieldDelegate {

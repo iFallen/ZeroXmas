@@ -22,9 +22,9 @@ extension ZeroXmas where Base: UIViewController {
     /// RemoveKeyboardNotification
     public func removeKeyboardNotification() {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIResponder.keyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIResponder.keyboardWillHideNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     /// KeyWindow rootViewController
@@ -33,7 +33,7 @@ extension ZeroXmas where Base: UIViewController {
         repeat{
             if let presentedVC = keyVC?.presentedViewController {
                 keyVC = presentedVC
-            }else {
+            } else {
                 break
             }
         } while ((keyVC?.presentedViewController) != nil)
@@ -41,25 +41,25 @@ extension ZeroXmas where Base: UIViewController {
     }
     
     /// Add Application Notice
-    public func addApplicationNotice() {
+    public func addApplicationNotification() {
         let notificationCenter = NotificationCenter.default
         
-        notificationCenter.addObserver(self, selector: #selector(base.zx_appWillResignActive(notice:)), name: UIApplication.willResignActiveNotification, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(base.zx_appDidBecomeActive(notice:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appWillResignActive(notice:)), name: UIApplication.willResignActiveNotification, object: nil)
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appDidBecomeActive(notice:)), name: UIApplication.didBecomeActiveNotification, object: nil)
 
-        notificationCenter.addObserver(self, selector: #selector(base.zx_appWillEnterForeground(notice:)), name: UIApplication.willEnterForegroundNotification, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(base.zx_appDidEnterBackground(notice:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appWillEnterForeground(notice:)), name: UIApplication.willEnterForegroundNotification, object: nil)
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appDidEnterBackground(notice:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
         
-        notificationCenter.addObserver(self, selector: #selector(base.zx_appWillTerminate(notice:)), name: UIApplication.willTerminateNotification, object: nil)
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appWillTerminate(notice:)), name: UIApplication.willTerminateNotification, object: nil)
     }
     
-    public func remoteApplicationNotice() {
+    public func removeApplicationNotification() {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self, name: UIApplication.willResignActiveNotification, object: nil)
-        notificationCenter.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
-        notificationCenter.removeObserver(self, name: UIApplication.willEnterForegroundNotification, object: nil)
-        notificationCenter.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
-        notificationCenter.removeObserver(self, name: UIApplication.willTerminateNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.willResignActiveNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.didBecomeActiveNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.willEnterForegroundNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.didEnterBackgroundNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.willTerminateNotification, object: nil)
     }
 }
 
