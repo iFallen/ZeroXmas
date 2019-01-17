@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZeroXmas'
-  s.version          = '0.9.2'
+  s.version          = '0.9.3'
   s.summary          = 'ZeroXmas is a lightweight Common UI Config Lib for iOS , write by swift.'
   s.description      = <<-DESC
 TODO: Config plist file in ZXSetting.bundle, Use UIColor.zx.xxx UIFont.zx.xxx and TabBar NavBar Config and so on.
