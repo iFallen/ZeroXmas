@@ -26,19 +26,13 @@ public protocol NibLoadableView: class {}
 
 extension ZeroXmas where Base: ReusableView {
     public static var reuseIdentifier: String {
-        var str = String(describing: self)
-        str = str.replacingOccurrences(of: "ZeroXmas<", with: "")
-        str = str.replacingOccurrences(of: ">", with: "")
-        return str
+        return String(describing: Base.self)
     }
 }
 
 extension ZeroXmas where Base: ReusableView {
     public static var nibName: String {
-        var str = String(describing: self)
-        str = str.replacingOccurrences(of: "ZeroXmas<", with: "")
-        str = str.replacingOccurrences(of: ">", with: "")
-        return str
+        return String(describing: Base.self)
     }
 }
 

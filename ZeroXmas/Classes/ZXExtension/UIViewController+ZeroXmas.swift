@@ -22,9 +22,9 @@ extension ZeroXmas where Base: UIViewController {
     /// RemoveKeyboardNotification
     public func removeKeyboardNotification() {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIResponder.keyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIResponder.keyboardWillHideNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     /// KeyWindow rootViewController
@@ -33,33 +33,57 @@ extension ZeroXmas where Base: UIViewController {
         repeat{
             if let presentedVC = keyVC?.presentedViewController {
                 keyVC = presentedVC
-            }else {
+            } else {
                 break
             }
         } while ((keyVC?.presentedViewController) != nil)
         return keyVC!
     }
+    
+    /// Add Application Notice
+    public func addApplicationNotification() {
+        let notificationCenter = NotificationCenter.default
+        
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appWillResignActive(notice:)), name: UIApplication.willResignActiveNotification, object: nil)
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appDidBecomeActive(notice:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appWillEnterForeground(notice:)), name: UIApplication.willEnterForegroundNotification, object: nil)
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appDidEnterBackground(notice:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        
+        notificationCenter.addObserver(base, selector: #selector(base.zx_appWillTerminate(notice:)), name: UIApplication.willTerminateNotification, object: nil)
+    }
+    
+    public func removeApplicationNotification() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.removeObserver(base, name: UIApplication.willResignActiveNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.didBecomeActiveNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.willEnterForegroundNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.didEnterBackgroundNotification, object: nil)
+        notificationCenter.removeObserver(base, name: UIApplication.willTerminateNotification, object: nil)
+    }
 }
 
 extension UIViewController{
+    
+    @objc open func zx_appWillResignActive(notice: Notification) {}
+    @objc open func zx_appDidBecomeActive(notice: Notification) {}
+    @objc open func zx_appWillEnterForeground(notice: Notification) {}
+    @objc open func zx_appDidEnterBackground(notice: Notification) {}
+    @objc open func zx_appWillTerminate(notice: Notification) {}
     
     /// zx_keyboardWillShow
     ///
     /// - Parameters:
     ///   - dt: duration
     ///   - userInfo: userInfo description
-    @objc open func zx_keyboardWillShow(duration dt: Double,userInfo:Dictionary<String,Any>) {
-        
-    }
+    @objc open func zx_keyboardWillShow(duration dt: Double,userInfo:Dictionary<String,Any>) {}
     
     /// zx_keyboardWillHide
     ///
     /// - Parameters:
     ///   - dt: duration
     ///   - userInfo: userInfo description
-    @objc open func zx_keyboardWillHide(duration dt: Double,userInfo:Dictionary<String,Any>) {
-        
-    }
+    @objc open func zx_keyboardWillHide(duration dt: Double,userInfo:Dictionary<String,Any>) {}
     
     /// zx_keyboardWillChangeFrame
     ///
